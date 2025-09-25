@@ -12,7 +12,8 @@ app.get('/', (req, res) => {
 
 // Health check endpoint
 app.get('/health', (req, res) => {
-  res.status(200).send('Service is up and running');
+  const currentTime = new Date().toISOString();
+  res.status(200).send(`Service is up and running. Current time is ${currentTime}`);
 });
 
 io.on('connection', (socket) => {
