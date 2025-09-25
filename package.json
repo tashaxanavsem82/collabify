@@ -1,0 +1,20 @@
+{
+  "name": "collabify",
+  "version": "1.0.0",
+  "description": "A collaborative tool for teams",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "jest"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^4.0.0",
+    "mongoose": "^5.10.0"
+  },
+  "devDependencies": {
+    "jest": "^26.6.0"
+  },
+  "author": "Your Name",
+  "license": "MIT"
+}
