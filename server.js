@@ -10,6 +10,11 @@ app.get('/', (req, res) => {
   res.send('Welcome to the Collabify Real-time Collaboration API!');
 });
 
+// Health check endpoint
+app.get('/health', (req, res) => {
+  res.status(200).send('OK');
+});
+
 io.on('connection', (socket) => {
   console.log('A user connected');
   socket.on('disconnect', () => {
