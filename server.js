@@ -12,7 +12,7 @@ app.get('/', (req, res) => {
 
 // Health check endpoint
 app.get('/health', (req, res) => {
-  res.status(200).send('OK');
+  res.status(200).send('Service is up and running');
 });
 
 io.on('connection', (socket) => {
