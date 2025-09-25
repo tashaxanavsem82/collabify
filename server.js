@@ -7,7 +7,7 @@ const server = http.createServer(app);
 const io = socketIo(server);
 
 app.get('/', (req, res) => {
-  res.send('Welcome to the Collabify Real-time Collaboration Platform!');
+  res.send('Welcome to the Collabify Real-Time Collaboration Platform!');
 });
 
 // Health check endpoint
